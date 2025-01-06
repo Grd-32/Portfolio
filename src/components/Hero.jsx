@@ -4,8 +4,6 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
 import codebg from '../assets/backgrounds/code-bg.jpeg';
-import hero from '../assets/backgrounds/hero.jpeg';
-import dan from '../assets/personal/dan-photoroom.png';
 // import { worldmap } from '../assets';
 
 const Hero = () => {
