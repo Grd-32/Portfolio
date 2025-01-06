@@ -37,12 +37,11 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+        As a passionate software developer, I specialize in building full-stack applications with proficiency in both front end and backend. My work spans creating visually appealing front-end interfaces, developing efficient back-end systems, and ensuring seamless user experiences.
+
+I have a strong eye for design and functionality, which allows me to bridge the gap between UI/UX design and practical implementation. My goal is to transform ideas into tangible, impactful solutions that meet both user needs and business objectives.
+
+Here are my key focus areas:
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

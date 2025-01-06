@@ -2,21 +2,25 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { shaq, bwmap, worldmap } from '../assets';
+import { FaGithub, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
+import codebg from '../assets/backgrounds/code-bg.jpeg';
+import hero from '../assets/backgrounds/hero.jpeg';
+import dan from '../assets/personal/dan-photoroom.png';
+// import { worldmap } from '../assets';
 
 const Hero = () => {
   return (
     <>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
         <img
-          src={bwmap}
+          src={codebg}
           alt="world map"
           className="w-full h-full sm:block hidden object-cover"
         />
       </div>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
         <img
-          src={worldmap}
+          src={codebg}
           alt="world map"
           className="w-full h-full sm:hidden block object-cover"
         />
@@ -42,12 +46,10 @@ const Hero = () => {
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase">
-                Shaquille
-              </span>
+                DanF              </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Lorem ipsum dolor sit amet. <br className="sm:block hidden" />
-              consectetur adipisicing elit deleniti, voluptas.
+            A full stack software developer . <br className="sm:block hidden" />
             </p>
           </div>
           <div
@@ -81,14 +83,30 @@ const Hero = () => {
         </div>
 
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-        <div>
+        {/* <div>
           <img
-            className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
-            src={shaq}
+            className="absolute bottom-0 ml-[100vw] 
+            lg:ml-[175vw] md:ml-[160vw] xmd:ml-[160vw] 2xl:ml-[183vw]
+            sm:h-[190vh] md:h-[170vh] xl:h-[180vh]"
+            src={hero}
             alt="shaquille"
           />
+        </div> */}
+           
+        {/* Social Media Icons */}
+        <div className="absolute top-2/3 right-5 flex flex-col items-center gap-4 z-10">
+          <a href="https://github.com/Grd-32" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-[32px] text-eerieWhite hover:text-dim transition duration-300" />
+          </a>
+          <a href="https://www.linkedin.com/in/daniel-fundi-5159aa1b5" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-[32px] text-eerieWhite hover:text-dim transition duration-300" />
+          </a>
+          <a href="https://facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
+            <FaFacebook className="text-[32px] text-eerieWhite hover:text-dim transition duration-300" />
+          </a>
+          <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
+            <FaTwitter className="text-[32px] text-eerieWhite hover:text-dim transition duration-300" />
+          </a>
         </div>
       </section>
     </>
